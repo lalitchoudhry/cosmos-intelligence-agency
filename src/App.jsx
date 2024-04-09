@@ -4,7 +4,7 @@ import Home from "./pages/Home"
 function App() {
 
   return (
-    <div className="w-full">
+    <div className="flex justify-center items-center flex-col">
       <Home />
     </div>
   )

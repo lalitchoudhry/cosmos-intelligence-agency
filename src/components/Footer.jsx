@@ -3,14 +3,14 @@ import { FOOTER_LINK } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white p-20">
-      <div className="flex justify-between">
+    <footer className="bg-black text-white md:p-20 p-5">
+      <div className="flex flex-wrap justify-between">
         {FOOTER_LINK.map(({ head, links }) => (
           <div>
             <h5 className="text-xl font-bold font-space my-2">{head}</h5>
             <ul>
               {links.map(({ label, value }) => (
-                <li className="font-space my-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-pink duration-300"><a href="#">{label}</a></li>
+                <li className="font-space my-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-pink duration-300 text-sm"><a href="#">{label}</a></li>
               ))}
             </ul>
           </div>
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <ul className="flex justify-between font-space">
+        {/* <ul className="flex flex-wrap justify-between font-space text-xs md:text-base">
             <li><a href="#">Search CIA.gov</a></li>
             <li><a href="#">Site Policies</a></li>
             <li><a href="#">Privacy</a></li>
@@ -35,7 +35,7 @@ const Footer = () => {
             <li><a href="#">Inspector General</a></li>
             <li><a href="#">GOV</a></li>
             <li><a href="#">Site map</a></li>
-        </ul>
+        </ul> */}
       </div>
     </footer>
   );
