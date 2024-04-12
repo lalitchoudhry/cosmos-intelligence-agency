@@ -1,11 +1,13 @@
 // ASSETS IMPORTS
+import logo from "/assets/icons/frog.png";
 import contact from "/assets/icons/alien-contact.png";
 import report from "/assets/icons/planet-report.png";
 
 const Navbar = () => {
   return (
-    <header className=" fixed top-0 text-white bg-black w-full flex justify-between items-center p-5 bg-opacity-80 z-10 xl:max-w-screen-xl">
-      <div>
+    <header className=" fixed top-0 text-white bg-black w-full flex justify-between items-center p-5 bg-opacity-80 z-10 ">
+      <div className="flex justify-between items-center">
+        <img className="w-20" src={logo} alt="img" />
         <span className="font-black text-4xl font-cosmic">CIA</span>
       </div>
       <nav>

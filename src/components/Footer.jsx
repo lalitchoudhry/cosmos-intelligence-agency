@@ -3,14 +3,14 @@ import { FOOTER_LINK } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white md:p-20 p-5">
+    <footer className=" text-white md:p-20 p-5 bg-black/60">
       <div className="flex flex-wrap justify-between">
         {FOOTER_LINK.map(({ head, links }) => (
-          <div>
-            <h5 className="text-xl font-bold font-space my-2">{head}</h5>
+          <div key={head}>
+            <h5 className="text-2xl font-bold font-space my-2">{head}</h5>
             <ul>
               {links.map(({ label, value }) => (
-                <li className="font-space my-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-pink duration-300 text-sm"><a href="#">{label}</a></li>
+                <li key={label} className="font-space my-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-pink duration-300 text-base"><a href="#">{label}</a></li>
               ))}
             </ul>
           </div>

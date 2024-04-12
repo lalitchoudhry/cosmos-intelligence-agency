@@ -6,7 +6,8 @@ export default {
   ],
   theme: {
     screens: {
-      sm: "500px",
+      xs: "380px",
+      sm: "510px",
       md: "770px",
       lg: "1050px",
       xl: "1540px",
@@ -34,6 +35,16 @@ export default {
       'orb': ["Orbitron", 'sans-serif'],
     },
     extend: {
+      backgroundImage: {
+        astro: 'url("/assets/icons/astronauts.png")',
+        story: 'url("/assets/images/story-banner.jpg")',
+        "solar-system": 'url("/assets/images/solar-system.png")',
+        comet: 'url("/assets/icons/comet.png")',
+        footer: 'url("/assets/images/footer-banner.jpg")',
+      },
+      animation: {
+        'bounce-slow': 'bounce 2s linear infinite',
+      },
     }
   },
   plugins: [
