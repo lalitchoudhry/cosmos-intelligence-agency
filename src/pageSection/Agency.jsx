@@ -4,6 +4,9 @@ import { useIsVisible } from "../utils/useIsVisible";
 // ASSETS IMPORTS
 import eyePatch from "/assets/icons/eye-patch.png";
 
+// COMPONENTS
+import PrimaryBtn from "../components/PrimaryBtn";
+
 const Agency = () => {
   // STATES AND VARIABLES
   const ref1 = useRef(null);
@@ -12,7 +15,7 @@ const Agency = () => {
   const isVisible2 = useIsVisible(ref2);
 
   return (
-    <section className="flex flex-col md:flex-row justify-between items-center sm:p-20 p-5 bg-black/60 text-white">
+    <section className="flex flex-col md:flex-row justify-between items-center sm:p-20 p-5 py-10">
       <div className={`flex flex-col-reverse md:flex-col justify-center items-center animate-visible ${
           isVisible2 ? "opacity-100" : "opacity-0"
         }`}>
@@ -31,13 +34,13 @@ const Agency = () => {
           Equipping leaders with celestial wisdom, safeguarding our space-faring
           civilization from cosmic calamities!
         </h4>
-        <p className="font-mon my-10 text-xl ">
+        <p className="font-comic my-10 text-2xl ">
           As the galaxy's top interstellar meme agency, our cosmic antics are
           crucial to universal hilarity. We gather and analyze extraterrestrial
           humor, and occasionally pull off cosmic pranks. Even the President of
           the Milky Way can't resist a chuckle from our cosmic memes.
         </p>
-        <p className=" decoration-pink underline">Discover Our Cosmic Story</p>
+        <PrimaryBtn label="Discover Our Cosmic Story" />
       </div>
     </section>
   );

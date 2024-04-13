@@ -1,6 +1,6 @@
 
 // ASSETS IMPORTS
-import homeBanner from "/assets/videos/space-back-7.mp4";
+import homeBanner from "/assets/videos/solar-back.mp4";
 
 // COMPONENTS IMPORTS
 import Navbar from "../components/Navbar";
@@ -21,10 +21,10 @@ const Hero = () => {
         width={100}
       ></video>
       <div className="absolute text-white flex flex-col justify-between item-center sm:text-start mt-20 sm:p-20 p-5">
-        <h1 className="text-4xl xs:text-5xl md:text-7xl font-semibold sm:font-normal sm:w-2/3 text-white font-mon my-5">
-          Unlocking the universe's secrets, one mystery at a time.
+        <h1 className="text-4xl xs:text-5xl md:text-6xl font-semibold sm:w-2/3 text-white font-orb my-5">
+        Spying Since the Big Bang
         </h1>
-        <p className="font-semibold text-base md:text-md my-5">
+        <p className="font-semibold text-lg font-mon md:text-md my-5 md:w-1/3">
           We accomplish what others cannot accomplish and go where others cannot
           go
         </p>

@@ -1,5 +1,5 @@
 // ASSETS IMPORTS
-import logo from "/assets/icons/frog.png";
+import logo from "/assets/icons/cia-logo.png";
 import contact from "/assets/icons/alien-contact.png";
 import report from "/assets/icons/planet-report.png";
 

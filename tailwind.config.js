@@ -33,6 +33,9 @@ export default {
       'space': ["Space Mono", 'monospace'],
       'mon': ["Montserrat", 'sans-serif'],
       'orb': ["Orbitron", 'sans-serif'],
+      chewy: ["Chewy", 'system-ui'],
+      marker: ["Permanent Marker", 'cursive'],
+      guy: [  "Luckiest Guy", 'cursive'],
     },
     extend: {
       backgroundImage: {
@@ -42,9 +45,9 @@ export default {
         comet: 'url("/assets/icons/comet.png")',
         footer: 'url("/assets/images/footer-banner.jpg")',
       },
-      animation: {
-        'bounce-slow': 'bounce 2s linear infinite',
-      },
+      boxShadow:{
+        button: '-10px 10px 0px #9BC53D'
+      }
     }
   },
   plugins: [
