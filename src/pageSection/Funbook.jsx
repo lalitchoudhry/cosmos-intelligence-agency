@@ -11,14 +11,14 @@ const Funbook = () => {
         <h2 className="font-bold font-space text-5xl underline decoration-coral decoration-8">
           The Planetary Funbook
         </h2>
-        <img className="sm:hidden my-5" src={dropComet} alt="img" />
+        <img className="md:hidden my-5" src={dropComet} alt="img" />
         <p className="font-mon font-bold md:font-thin text-3xl xs:text-5xl md:text-silver text-coral my-10 leading-normal">
           Tour the cosmos, CIAlien-style. Discover the universe’s galaxies,
           planets, black holes, and stellar mysteries.
         </p>
         <PrimaryBtn label="Rocket Through Our Cosmic Facts" />
       </div>
-      <img className="w-1/3 hidden sm:block" src={dropComet} alt="img" />
+      <img className="w-1/3 hidden md:block" src={dropComet} alt="img" />
     </section>
   );
 };

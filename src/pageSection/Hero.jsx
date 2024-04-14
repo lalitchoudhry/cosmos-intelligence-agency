@@ -20,7 +20,7 @@ const Hero = () => {
         height="200"
         width={100}
       ></video>
-      <div className="absolute text-white flex flex-col justify-between item-center sm:text-start mt-20 sm:p-20 p-5">
+      <div className="absolute text-white flex flex-col justify-between item-center sm:text-start mt-20 md:p-20 p-5">
         <h1 className="text-4xl xs:text-5xl md:text-6xl font-semibold sm:w-2/3 text-white font-orb my-5">
         Spying Since the Big Bang
         </h1>

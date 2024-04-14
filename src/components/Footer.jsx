@@ -15,32 +15,35 @@ const Footer = () => {
         </span>
       </div>
       <div className="w-full flex flex-col md:flex-row justify-between mt-5 font-space ">
-        <div>
-          <h5 className="text-xl">Galactic Hub🚿</h5>
-          <ul className="child:text-[#9DB4FF] child-hover:underline">
+        <div className="my-2">
+          <h5 className="text-2xl">Galactic Hub 🚿</h5>
+          <ul className="child:text-[#9DB4FF] child-hover:hover-social-link child:text-lg">
             <li>
               <a className="" href="/">
-                Galactic Home Base🚀
+              🚀 Galactic Home Base
               </a>
             </li>
             <li>
-              <a href="/contact">Signal Frequencies🗾</a>
+              <a href="#">🗾 Signal Frequencies </a>
             </li>
             <li>
-              <a href="/privacy">Space Laws Apply🚨</a>
+              <a href="#">🚨 Space Laws Apply</a>
             </li>
           </ul>
         </div>
-        <div className="">
-          <ul className="flex sm:justify-end sm:items-end items-start justify-start">
-            <a className="text-3xl" href="http://facebook.com">
-              🪐
+        <div className="my-2">
+          <ul className="flex flex-col sm:justify-end md:items-end items-start justify-start text-[#9DB4FF] child-hover:hover-social-link child:text-lg">
+            <a className="" href="http://facebook.com">
+              🪐 Facebook
             </a>
-            <a className="text-3xl" href="http://twitter.com">
-              🌟
+            <a className="" href="http://twitter.com">
+              🌟 Twitter
             </a>
-            <a className="text-3xl" href="http://instagram.com">
-              👽
+            <a className="" href="http://instagram.com">
+              👽 Instagram
+            </a>
+            <a className="" href="http://instagram.com">
+              🤖 Discord
             </a>
           </ul>
           <p className="text-silver text-sm">

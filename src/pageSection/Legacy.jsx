@@ -14,12 +14,12 @@ const Legacy = () => {
   // const isVisible2 = useIsVisible(ref2);
 
   return (
-    <section className=" text-white flex flex-col-reverse md:flex-row justify-center items-center p-5 py-10 sm:p-20 bg-black relative">
-      <img ref={ref1} className={`w-1/2 hidden md:block  absolute top-0 right-0 animate-visible ${
+    <section className=" text-white flex flex-col-reverse md:flex-row justify-center items-center p-5 py-10 md:p-20 bg-black relative">
+      <img ref={ref1} className={`w-1/2 hidden md:block  absolute bottom-0 right-0 animate-visible ${
           isVisible1 ? "opacity-100" : "opacity-0"
         }`} src={solarSystem} alt='img' />
     <div className=" text-justif border-l-2 border-pink pl-1">
-          <h2 className=" font-bold font-mon text-5xl sm:text-9xl my-5">
+          <h2 className=" font-bold font-mon text-5xl sm:text-8xl md:text-9xl my-5">
             Our Cosmic Chronicles
           </h2>
           <p className=" font-black font-orb my-10 md:w-1/2">

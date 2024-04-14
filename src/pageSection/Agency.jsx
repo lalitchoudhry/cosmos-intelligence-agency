@@ -15,7 +15,7 @@ const Agency = () => {
   const isVisible2 = useIsVisible(ref2);
 
   return (
-    <section className="flex flex-col md:flex-row justify-between items-center sm:p-20 p-5 py-10">
+    <section className="flex flex-col md:flex-row justify-between items-center md:p-20 p-5 py-10">
       <div className={`flex flex-col-reverse md:flex-col justify-center items-center animate-visible ${
           isVisible2 ? "opacity-100" : "opacity-0"
         }`}>

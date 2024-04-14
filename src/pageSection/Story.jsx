@@ -12,7 +12,7 @@ import StoryCard from "../components/StoryCard";
 const Story = () => {
   return (
     <section className=" bg-black">
-        <div className=" sm:p-20 p-5 py-10">
+        <div className=" md:p-20 p-5 py-10">
           <h2 className="font-bold font-space text-5xl sm:text-7xl text-white underline decoration-green decoration-8">
             Planetory Tales
           </h2>
