@@ -40,7 +40,7 @@ const Agency = () => {
           humor, and occasionally pull off cosmic pranks. Even the President of
           the Milky Way can't resist a chuckle from our cosmic memes.
         </p>
-        <PrimaryBtn label="Discover Our Cosmic Story" />
+        <PrimaryBtn label="Discover Our Cosmic Story" href="https://www.cia.gov/about" />
       </div>
     </section>
   );

@@ -24,33 +24,33 @@ const Navbar = () => {
           }`}
         >
           <li className="mx-3">
-            <a href="#">Today's CIA</a>
+            <a href="https://www.cia.gov/about/">Today's CIA</a>
           </li>
           <li className="mx-3">
-            <a href="#">Cosmic Careers</a>
+            <a href="https://www.cia.gov/careers/">Cosmic Careers</a>
           </li>
           <li className="mx-3">
-            <a href="#">Space Saga</a>
+            <a href="https://www.cia.gov/podcast/the-langley-files">Space Saga</a>
           </li>
           <li className="mx-3">
-            <a href="#">Memesphere</a>
+            <a href="https://www.cia.gov/legacy/museum/">Memesphere</a>
           </li>
           <li className="mx-3">
-            <a href="#">Planetarium</a>
+            <a href="https://www.cia.gov/resources/world-leaders/">Planetarium</a>
           </li>
         </ul>
       </nav>
       <div>
         <ul className="flex font-comic text-base child-hover:underline child:decoration-pink">
           <a
-            href="#"
+            href="https://www.usa.gov/"
             className="mx-2 flex flex-col justify-center items-center"
           >
             <img className="w-12" src={contact} alt="icon" />
             <span className="hidden sm:block">Alien Hotline</span>
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/central-intelligence-agency"
             className="mx-2 flex flex-col justify-center items-center"
           >
             <img className="w-12" src={report} alt="icon" />

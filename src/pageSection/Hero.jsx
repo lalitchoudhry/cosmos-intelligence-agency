@@ -21,7 +21,7 @@ const Hero = () => {
         width={100}
       ></video>
       <div className="absolute text-white flex flex-col justify-between item-center sm:text-start mt-20 md:p-20 p-5">
-        <h1 className="text-4xl xs:text-5xl md:text-6xl font-semibold sm:w-2/3 text-white font-orb my-5">
+        <h1 className="text-5xl md:text-7xl font-semibold sm:w-2/3 text-white font-orb my-5">
         Spying Since the Big Bang
         </h1>
         <p className="font-semibold text-lg font-mon md:text-md my-5 md:w-1/3">
@@ -35,7 +35,7 @@ const Hero = () => {
         </p>
         <div className="my-10">
           {/* <div className="border-2 border-pink animate-ping"></div> */}
-          <HeroBtn label="Find Your Cosmic Destiny" />
+          <HeroBtn label="Find Your Cosmic Destiny" href="https://www.cia.gov/careers/" />
         </div>
       </div>
     </main>

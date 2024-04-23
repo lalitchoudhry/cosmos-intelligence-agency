@@ -1,8 +1,8 @@
 import React from 'react'
 
-const PrimaryBtn = ({label}) => {
+const PrimaryBtn = ({label, href}) => {
   return (
-    <button className='text-lg sm:text-2xl font-black font-orb border-4 p-2 bg-coral text-black shadow-button shadow-teal hover:scale-95 hover:shadow-inner'>{label}</button>
+    <a href={href} className='text-lg sm:text-2xl font-black font-orb border-4 p-2 bg-coral text-black shadow-button shadow-teal hover:scale-95 hover:shadow-inner'>{label}</a>
   )
 }
 

@@ -16,7 +16,7 @@ const Funbook = () => {
           Tour the cosmos, CIAlien-style. Discover the universe’s galaxies,
           planets, black holes, and stellar mysteries.
         </p>
-        <PrimaryBtn label="Rocket Through Our Cosmic Facts" />
+        <PrimaryBtn label="Rocket Through Our Cosmic Facts" href="https://www.cia.gov/the-world-factbook" />
       </div>
       <img className="w-1/3 hidden md:block" src={dropComet} alt="img" />
     </section>

@@ -34,7 +34,7 @@ const Legacy = () => {
             have propelled us to become the universe's top meme intelligence
             agency
           </p>
-          <PrimaryBtn label="Get Lost in Our Spacey Stories" />
+          <PrimaryBtn label="Get Lost in Our Spacey Stories" href="https://www.cia.gov/legacy/" />
         </div>
       </section>
   )
