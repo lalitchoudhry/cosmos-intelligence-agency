@@ -1,7 +1,7 @@
 // ASSETS IMPORTS
 import astroDog from "/assets/images/asto-dog.jpg";
-import story1 from "/assets/images/story-1.jpg";
-import story2 from "/assets/images/story-2.jpg";
+import story1 from "/assets/images/story-monky.jpg";
+import story2 from "/assets/images/story-boy.jpg";
 // import funbookBanner from "/assets/images/funbook.jpg";
 import solarSystem from "/assets/images/solar-system.png";
 
