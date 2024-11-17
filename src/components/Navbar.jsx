@@ -2,8 +2,6 @@ import { useState } from "react";
 
 // ASSETS IMPORTS
 import logo from "/assets/icons/cia-logo.png";
-import contact from "/assets/icons/alien-contact.png";
-import report from "/assets/icons/planet-report.png";
 
 const Navbar = () => {
   // STATES AND VARIABLES
@@ -13,58 +11,77 @@ const Navbar = () => {
     <header className=" fixed top-0 text-white bg-black w-full flex justify-between items-center p-5 bg-opacity-80 z-10 ">
       <div className="flex justify-between items-center">
         <img className="w-20" src={logo} alt="img" />
-        <span className="font-black text-4xl font-cosmic">CIA</span>
+        <span className="font-black text-5xl font-orb">CIA</span>
       </div>
       <nav>
         <ul
-          className={`${
+          className={`transition duration-300 ${
             showMobileNav
-              ? "flex flex-col items-center absolute bg-blue w-full top-28 left-0 child:mobile-nav"
-              : "hidden md:flex font-semibold text-xl font-comic child-hover:underline child:decoration-pink"
+              ? "flex flex-col items-center absolute bg-blue w-full top-28 left-0 border-b-4 child:mobile-nav translate-y-0"
+              : "invisible md:visible child:hidden md:child:block md:flex font-semibold text-lg font-mon child:nav-link -translate-y-96 md:translate-y-0"
           }`}
         >
-          <li className="mx-3">
-            <a href="https://www.cia.gov/about/">Today's CIA</a>
+          <li>
+            <a href="#">Home</a>
           </li>
-          <li className="mx-3">
-            <a href="https://www.cia.gov/careers/">Cosmic Careers</a>
+          <li>
+            <a href="#">Missions</a>
           </li>
-          <li className="mx-3">
-            <a href="https://www.cia.gov/podcast/the-langley-files">Space Saga</a>
+          <li>
+            <a href="#">Agents</a>
           </li>
-          <li className="mx-3">
-            <a href="https://www.cia.gov/legacy/museum/">Memesphere</a>
+          <li>
+            <a href="#">Contact</a>
           </li>
-          <li className="mx-3">
-            <a href="https://www.cia.gov/resources/world-leaders/">Planetarium</a>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Gallery</a>
           </li>
         </ul>
       </nav>
       <div>
-        <ul className="flex font-comic text-base child-hover:underline child:decoration-pink">
+        <ul className="hidden md:flex font-mon text-base child-hover:underline child:decoration-pink">
           <a
-            href="https://www.usa.gov/"
-            className="mx-2 flex flex-col justify-center items-center"
+            href="#"
+            className="mx-3 flex flex-col justify-center items-center"
           >
-            <img className="w-12" src={contact} alt="icon" />
-            <span className="hidden sm:block">Alien Hotline</span>
+            <i className="bi bi-telegram text-3xl hover:text-pink"></i>
           </a>
           <a
-            href="https://www.linkedin.com/company/central-intelligence-agency"
-            className="mx-2 flex flex-col justify-center items-center"
+            href="#"
+            className="mx-3 flex flex-col justify-center items-center"
           >
-            <img className="w-12" src={report} alt="icon" />
-            <span className="hidden sm:block">Cosmic Intel</span>
+            <i className="bi bi-twitter-x text-3xl hover:text-pink"></i>
           </a>
-      <div
-        className="md:hidden w-8 h-8 flex justify-between flex-col"
-        onClick={() => setShowMobileNav(!showMobileNav)}
-      >
-        <div className={`w-full p-0.5 m-1.5 bg-yellow rounded ${showMobileNav ? "" : ""}`}></div>
-        <div className={`w-full p-0.5 m-1.5 bg-yellow rounded ${showMobileNav ? " origin-center rotate-45" : ""}`}></div>
-        <div className={`w-full p-0.5 m-1.5 bg-yellow rounded ${showMobileNav ? "" : ""}`}></div>
-      </div>
         </ul>
+        <div
+          className="md:hidden"
+          onClick={() => setShowMobileNav(!showMobileNav)}
+        >
+          <div
+            className={`bg-yellow w-8 h-1 m-1.5 rounded-full transition ${
+              showMobileNav
+                ? "rotate-45 translate-y-2.5 duration-300"
+                : "rotate-0 translate-y-0 duration-300"
+            }`}
+          ></div>
+          <div
+            className={`bg-yellow w-8 h-1 m-1.5 rounded-full transition ${
+              showMobileNav
+                ? "scale-x-0 duration-300"
+                : "scale-x-1 duration-300"
+            }`}
+          ></div>
+          <div
+            className={`bg-yellow w-8 h-1 m-1.5 rounded-full transition ${
+              showMobileNav
+                ? "-rotate-45 -translate-y-2.5 duration-300"
+                : "-rotate-0 -translate-y-0 duration-300"
+            }`}
+          ></div>
+        </div>
       </div>
     </header>
   );

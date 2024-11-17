@@ -8,15 +8,15 @@ const Funbook = () => {
   return (
     <section className=" text-white flex justify-between items-center bg-blue md:p-20 p-5 py-10">
       <div className="">
-        <h2 className="font-bold font-space text-5xl underline decoration-coral decoration-8">
+        <h2 className="font-bold font-orb text-5xl sm:text-7xl">
           The Planetary Funbook
         </h2>
         <img className="md:hidden my-5" src={dropComet} alt="img" />
-        <p className="font-mon font-bold md:font-thin text-3xl xs:text-5xl md:text-silver text-coral my-10 leading-normal">
+        <p className=" max-w-xl font-mon text-2xl md:text-silver text-coral my-10 leading-normal">
           Tour the cosmos, CIAlien-style. Discover the universe’s galaxies,
           planets, black holes, and stellar mysteries.
         </p>
-        <PrimaryBtn label="Rocket Through Our Cosmic Facts" href="https://www.cia.gov/the-world-factbook" />
+        <PrimaryBtn label="Rocket Through Our Cosmic Facts" href="#" />
       </div>
       <img className="w-1/3 hidden md:block" src={dropComet} alt="img" />
     </section>
